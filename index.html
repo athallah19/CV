@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="src/output.css" />
+  <!-- <link rel="stylesheet" href="src/checkbox.css" /> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +36,24 @@
     #nav-menu {
       z-index: 9999;
       /* Atur sesuai kebutuhan */
+    }
+
+    .box-wrap .box .chart {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 30px;
+      line-height: 150px;
+      color: #000;
+    }
+
+
+    .box-wrap .box canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 
@@ -202,6 +221,17 @@
                   class="text-base text-dark py-2 mx-5 flex group-hover:text-primary dark:text-white">Contact</a>
               </li>
 
+              <!-- <li class="checkbox-wrapper-35 flex items-center pl-5 mt-3 lg:mt-0">
+                <input class="switch" type="checkbox" id="switch" name="switch" value="private">
+                <label for="switch" class="text-sm text-dark dark:text-white">
+                  <span class="switch-x-text">Tema: </span>
+                  <span class="switch-x-toggletext">
+                    <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>Light</span>
+                    <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>Dark</span>
+                  </span>
+                </label>
+              </li> -->
+
               <li class="flex items-center pl-5 mt-3 lg:mt-0">
                 <div class="flex">
                   <span class="mr-2 text-sm text-dark dark:text-white">Light</span>
@@ -239,9 +269,8 @@
             <span class="text-dark dark:text-white">Frontend Developer </span>
           </h2>
           <p class="font-medium text-secondary mb-10 leading-relaxed">
-            Sebagai Seorang enthusiast Frontend developer dan web designer, saya bersemangat untuk membawa kreativitas
-            dan
-            keahlian teknis saya ke tim pengembang Frontend/Web designer perusahan anda.
+            “You have power over your mind not outside events. Realise this, and you will find strength.” - Marcus
+            Aurelius
           </p>
           <a href="#contact"
             class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
@@ -251,12 +280,15 @@
           <div class="mt-16 relative lg:mt-9 lg:right-0 overflow-hidden">
             <img src="src/bengong.png" alt="Athallah" class="max-w-full mx-auto relative z-10" />
             <span class="absolute -bottom-8 sm:bottom-8 left-1/2 -translate-x-1/2 lg:scale-1.2">
+
               <svg class="w-[340px] h-[340px] sm:w-[400px] sm:h-[400px]" viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill="#0284c7"
                   d="M49.3,-36.4C62.4,-22.9,70.4,-2.5,67,16.5C63.6,35.5,48.8,53.1,29.1,63.8C9.5,74.6,-15.1,78.5,-31.4,69.1C-47.7,59.8,-55.8,37.2,-57.2,17C-58.7,-3.1,-53.5,-20.8,-42.9,-33.7C-32.2,-46.6,-16.1,-54.7,1,-55.5C18.1,-56.3,36.2,-49.8,49.3,-36.4Z"
                   transform="translate(100 100)" />
               </svg>
+
+
             </span>
           </div>
         </div>
@@ -274,26 +306,30 @@
             Tentang Saya
           </h4>
           <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">
-            3 Years Experience.
+            Fresh Graduete.
           </h2>
           <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-            Perkenalkan, nama saya Athallah Abhi Pramana. Saya lahir di <span class="font-bold">Bandung</span> pada
-            tanggal 19 Juli 2005. saya lulusan dari
-            SMK Angkasa Husein Sastranegara Bandung, jurusan Rekayasa Perangkat Lunak. Saya memiliki minat besar dalam
-            desain dan coding, serta memiliki pengalaman dalam memanfaatkan teknologi AI.
-            <!-- Kecintaan saya terhadap desain
-            mendorong saya untuk berinovasi dan menciptakan karya yang menarik dan fungsional. Passion saya dalam coding
-            selalu membuat saya tertantang untuk menemukan solusi yang efektif dan efisien. Pengalaman saya dengan AI
-            memungkinkan pengembangan proyek-proyek yang lebih canggih dan kreatif. -->
+            Perkenalkan, nama saya Athallah Abhi Pramana. Saya lahir di Bandung pada
+            tanggal 19 Juli 2005. Saya memiliki minat besar dalam desain dan coding, serta memiliki pengalaman dalam
+            memanfaatkan teknologi AI dan bekerja dalam bentuk Tim, selain itu saya juga <span
+              class="font-bold">memahami bahasa Ingris</span>.
+
+            <br><br>
+
+            Selama 2 tahun terakhir ini Saya menekuni bidang programming website dan desain. Saya
+            mempelajari berbagai teknologi dan bahasa pemrograman seperti HTML, CSS, JavaScript, Java, Python, dan PHP,
+            serta pengelolaan basis data menggunakan MySQL. Dalam desain web, saya berpengalaman menggunakan
+            framework seperti TailwindCSS, serta tools desain seperti Figma.
           </p>
         </div>
-        <div class="w-full px-4 lg:w-1/2">
+        <div class="w-full px-4 lg:w-1/2 lg:pr-2 lg:pl-14">
           <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">
             Mari Berteman
           </h3>
           <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
-            Mari berteman dan berbagi pengalaman. jangan ragu untuk
-            menghubungi saya jika Anda tertarik untuk berkolaborasi atau berdiskusi lebih lanjut😁.
+            Mari berteman dan berbagi pengalaman. Jika Anda memiliki ide atau proyek yang ingin Anda kembangkan, jangan
+            ragu untuk
+            menghubungi saya!, Saya selalu terbuka untuk kolaborasi dan diskusi lebih lanjut 😁.
           </p>
           <div class="flex items-center dark:text-white">
             <!-- Instagram -->
@@ -314,17 +350,8 @@
                   d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
             </a>
-            <!-- Discord -->
-            <a href="https://Instagram.com/athallah_019" target="_blank" rel="noopener noreferrer"
-              class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-              <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <title>Discord</title>
-                <path
-                  d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-              </svg>
-            </a>
             <!-- LinkedIn -->
-            <a href="https://Instagram.com/athallah_019" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/athallah-abhi-1b37b1316/" target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>LinkedIn</title>
@@ -351,23 +378,27 @@
             Riwayat Pendidikan
           </h2>
           <p class="font-medium text-md text-secondary md:text-lg">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo vero
-            dolor laudantium doloremque reiciendis dignissimos repellat a,
-            minima hic minus mollitia tenetur! Optio, ullam doloremque?
+
+            Saya menempuh pendidikan di SDN Pasirkaliki Bandung dan SMPN 9 Bandung, kemudian melanjutkan bersekolah di
+            SMK Angkasa Husein Sastranegara Bandung, jurusan <span class="font-bold">rekayasa perangkat lunak</span>
+            dan lulus tahun 2024. Di SMK, saya mendalami berbagai aspek dalam rekayasa perangkat lunak, termasuk
+            dasar desain grafis, konsep dasar tentang hardware komputer, pengenalan jaringan, dan yang paling penting,
+            saya mengenal dunia website programming.
+
           </p>
         </div>
       </div>
       <div class="w-full px-4">
         <div class="flex flex-wrap items-center justify-center">
-          <a href="#"
+          <a href="https://www.instagram.com/sdn.013.pasirkaliki/" target="_blank"
             class="max-w-[100px] mx-10 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="src/PASKAL.png" alt="" />
           </a>
-          <a href="#"
+          <a href="https://www.instagram.com/bdg.smpn9/" target="_blank"
             class="max-w-[110px] mx-10 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="src/SALAPAN.png" alt="" />
           </a>
-          <a href="#"
+          <a href="https://www.instagram.com/smk_angkasahuseinbandung/" target="_blank"
             class="max-w-[128px] mx-10 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
             <img src="src/ANGKASA.png" alt="" />
           </a>
@@ -390,8 +421,10 @@
             Sertifikat Akademik
           </h2>
           <p class="font-medium text-md text-secondary md:text-lg">
-            Berikut meruapakan sertifikat yang telah saya peroleh dari berbagai kegiatan, Seperti
-            Bootcamp dan Praktek Kerja Lapangan (<span class="font-bold">PKL</span>). Sertifikat-sertifikat ini menjadi bukti konkrit atas upaya dan
+            Berikut merupakan sertifikat yang telah saya peroleh dari berbagai kegiatan, Seperti
+            <span class="font-bold">Bootcamp</span> dan Praktek Kerja Lapangan (<span class="font-bold">PKL</span>).
+            Sertifikat-sertifikat ini menjadi
+            bukti konkrit atas upaya dan
             dedikasi saya dalam mengembangkan keterampilan dan pengetahuan di berbagai bidang.
           </p>
         </div>
@@ -401,77 +434,21 @@
         <div class="mb-6 p-4 md:w-1/2">
           <div class="rounded-md bg-white shadow-lg dark:shadow-md overflow-hidden dark:bg-slate-800">
             <img src="src/Courser 1-1.png" alt="md" width="w-full" />
-            <!-- <div class="p-4">
-              <h3 class="font-semibold text-dark text-xl mt-3 mb-3 dark:text-white">
-                Sertifikat
-              </h3>
-              <p class="font-medium text-base text-slate-600 dark:text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt aut sequi officiis voluptas quibusdam alias,
-                dignissimos exercitationem hic nesciunt vitae!
-              </p>
-            </div> -->
           </div>
         </div>
         <div class="mb-6 p-4 md:w-1/2">
           <div class="rounded-md bg-white shadow-lg dark:shadow-md overflow-hidden dark:bg-slate-800">
             <img src="src/Course 2-1.png" alt="md" width="w-full" />
-            <!-- <div class="p-4">
-              <h3 class="font-semibold text-dark text-xl mt-3 mb-3 dark:text-white">
-                Sertifikat
-              </h3>
-              <p class="font-medium text-base text-slate-600 dark:text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt aut sequi officiis voluptas quibusdam alias,
-                dignissimos exercitationem hic nesciunt vitae!
-              </p>
-            </div> -->
           </div>
         </div>
         <div class="mb-6 p-4 md:w-1/2">
           <div class="rounded-md bg-white shadow-lg dark:shadow-md overflow-hidden dark:bg-slate-800">
             <img src="src/Course 3-1.png" alt="md" width="w-full" />
-            <!-- <div class="p-4">
-              <h3 class="font-semibold text-dark text-xl mt-3 mb-3 dark:text-white">
-                Sertifikat
-              </h3>
-              <p class="font-medium text-base text-slate-600 dark:text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt aut sequi officiis voluptas quibusdam alias,
-                dignissimos exercitationem hic nesciunt vitae!
-              </p>
-            </div> -->
           </div>
         </div>
         <div class="mb-6 p-4 md:w-1/2">
           <div class="rounded-md bg-white shadow-lg dark:shadow-md overflow-hidden dark:bg-slate-800">
             <img src="src/Sertifkat PKL/Sertifkat PKL-1.png" alt="md" width="w-full" />
-            <!-- <div class="p-4">
-              <h3 class="font-semibold text-dark text-xl mt-3 mb-3 dark:text-white">
-                Sertifikat
-              </h3>
-              <p class="font-medium text-base text-slate-600 dark:text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt aut sequi officiis voluptas quibusdam alias,
-                dignissimos exercitationem hic nesciunt vitae!
-              </p>
-            </div> -->
-          </div>
-        </div>
-
-        <div class="mb-6 p-4 md:w-1/2">
-          <div class="rounded-md bg-white shadow-lg dark:shadow-md overflow-hidden dark:bg-slate-800">
-            <img src="src/Sertifkat PKL/Sertifkat PKL-2.png" alt="md" width="w-full" />
-            <!-- <div class="p-4">
-              <h3 class="font-semibold text-dark text-xl mt-3 mb-3 dark:text-white">
-                Sertifikat
-              </h3>
-              <p class="font-medium text-base text-slate-600 dark:text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt aut sequi officiis voluptas quibusdam alias,
-                dignissimos exercitationem hic nesciunt vitae!
-              </p>
-            </div> -->
           </div>
         </div>
 
@@ -492,58 +469,181 @@
             Proyek Praktis
           </h2>
           <p class="font-medium text-md text-secondary md:text-lg">
-            Dalam bagian portofolio ini, Anda akan melihat rangkaian pengalaman dan proyek praktis yang mencerminkan
-            perjalanan dan perkembangan saya dalam karir ini. Saya harap Anda dapat melihat
-            potensi, dedikasi, dan nilai yang saya bawa ke meja kerja melalui portofolio ini.
+            Dalam bagian portofolio ini, Anda akan melihat rangkaian pengalaman dan proyek praktis yang telah saya buat.
+            Saya harap Anda dapat melihat
+            <span class="font-bold">potensi</span>, <span class="font-bold">dedikasi</span>, dan nilai yang saya bawa ke
+            meja kerja, melalui portofolio ini.
           </p>
         </div>
       </div>
 
       <div class="flex flex-wrap justify-center">
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="cloning">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-            <img src="src/ken-suarez-4IxPVkFGJGI-unsplash.jpg" alt="Keyboard & Lego." class="w-full" />
+            <img src="src/fg3.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
             <div style="padding: 2rem 1.5rem" class="py-8 px-6">
-              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
-                Keyboard & Lego.
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Cloning design website
               </h3>
               <p class="font-medium text-base text-secondary mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quisquam, quod.
+                Pada projek ini Saya belajar untuk mengkloning
+                desain dan tata letak halaman Website Mentor di learningX menggunakan Figma.
               </p>
-              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+              <a href="https://www.figma.com/design/EzDNQxdn2bsTEzV2JKK41x/Portofolio?node-id=0-1&t=ozN2trP4KediGjq4-1"
+                target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
                 Selengkapnya</a>
             </div>
           </div>
         </div>
+
         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-            <img src="src/ken-suarez-4IxPVkFGJGI-unsplash.jpg" alt="Keyboard & Lego." class="w-full" />
+            <img src="src/fg1.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
             <div style="padding: 2rem 1.5rem" class="py-8 px-6">
-              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
-                Keyboard & Lego.
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Cloning design website
               </h3>
               <p class="font-medium text-base text-secondary mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quisquam, quod.
+                Pada projek ini Saya belajar untuk mengkloning
+                desain dan tata letak halaman Website <a class="underline" href="https://www.myplate.gov/"
+                  target="_blank">Myplate</a> menggunakan Figma.
               </p>
-              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+              <a href="https://www.figma.com/design/EzDNQxdn2bsTEzV2JKK41x/Portofolio?node-id=0-1&t=ozN2trP4KediGjq4-1"
+                target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
                 Selengkapnya</a>
             </div>
           </div>
         </div>
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="dsport">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-            <img src="src/ken-suarez-4IxPVkFGJGI-unsplash.jpg" alt="Keyboard & Lego." class="w-full" />
+            <img src="src/fg2.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
             <div style="padding: 2rem 1.5rem" class="py-8 px-6">
-              <h3 class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
-                Keyboard & Lego.
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Design website portofolio
               </h3>
               <p class="font-medium text-base text-secondary mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quisquam, quod.
+                Pada projek ini Saya belajar untuk membuat design website portofolio pribadi menggunakan figma.
               </p>
-              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+              <a href="https://www.figma.com/design/EzDNQxdn2bsTEzV2JKK41x/Portofolio?node-id=0-1&t=ozN2trP4KediGjq4-1"
+                target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="cloningweb">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/ig.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Cloning UI Instagram
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Pada projek ini Saya belajar untuk mengkloning
+                desain dan tata letak halaman Instagram. saya membuat website ini menggunakan HTML VanillaCSS dan
+                library Swiper JS.
+              </p>
+              <a href="https://github.com/athallah19/Cloning-Instagram-UI" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/shpe.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Cloning UI Shopee
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Pada projek ini Saya belajar untuk mengkloning
+                desain dan tata letak halaman Shopee. saya membuat website ini menggunakan HTML VanillaCSS dan library
+                Swiper JS.
+              </p>
+              <a href="https://github.com/athallah19/Cloning-Shopee-UI" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/fb.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Cloning UI Facebook
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Pada projek ini Saya belajar untuk mengkloning
+                desain dan tata letak halaman Facebook. saya membuat website ini menggunakan HTML VanillaCSS dan
+                JavaScript
+              </p>
+              <a href="https://github.com/athallah19/Cloning-Facebook-UI" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="kalkulator">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/kal.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Kalkulator
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Pada projek ini Saya belajar untuk membuat Kalkulator sederhana menggunakan HTML, Sedikit CSS dan
+                JavaScript
+              </p>
+              <a href="https://github.com/athallah19/Kalkulator" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="portofolio">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/port.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                Website Portofolio
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">
+                Pada projek ini Saya belajar membuat website portofolio pribadi menggunakan html tailwindcss dan
+                JavaScript. website ini adalah hasil dari saya mengikuti playlist belajar TailwindCSS di youtube
+                <a href="https://www.youtube.com/watch?v=z3slaXqmkT0&list=PLFIM0718LjIUHFRMzPJ0wGjx9_NlC5d1h"
+                  class="underline" target="_blank">sandhikaGalih</a>
+              </p>
+              <a href="https://github.com/athallah19/Portfolio-tailwind" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
+                Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3" id="angkasaconnect">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+            <img src="src/sasd.jpg" alt="Keyboard & Lego." class="w-full object-cover max-h-72 " />
+            <div style="padding: 2rem 1.5rem" class="py-8 px-6">
+              <h3 class="mb-3 font-semibold text-xl text-dark dark:text-white">
+                AngkasaConnect
+              </h3>
+              <p class="font-medium text-base text-secondary mb-6">Pada projek ini saya membuat aplikasi yang
+                memungkinkan anda untuk berbagi postingan
+                dan memberikan like atau komentar kepada postingan lain. aplikasi ini saya buat menggunakan HTML,
+                Vanilla CSS, JavaScript, PHP dan MySQL.
+              </p>
+              <a href="https://github.com/athallah19/Uji-Kompetensi-SMK" target="_blank"
+                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Lihat
                 Selengkapnya</a>
             </div>
           </div>
@@ -566,43 +666,69 @@
               Hubungi Saya
             </h2>
             <p class="font-medium text-md text-secondary md:text-lg">
-              jangan ragu untuk menghubungi saya jika Anda tertarik untuk berkolaborasi atau berdiskusi lebih lanjut!
+              Jika Anda tertarik untuk berkolaborasi atau berdiskusi lebih lanjut, jangan ragu untuk menghubungi saya!
+
             </p>
           </div>
         </div>
       </div>
 
-      <form>
+
+
+      <form name="contact-form">
         <div class="w-full lg:w-2/3 lg:mx-auto">
           <div class="w-full px-4 mb-8">
+            <div
+              class="notif hidden flex justify-between place-items-center text-white shadow-inner rounded p-3 mb-8 bg-primary">
+              <p class="self-center">
+                <span class="font-bold">Terimakasih! </span>Pesan anda sudah saya terima.
+              </p>
+              <strong class="text-xl align-center cursor-pointer alert-del">&times;</strong>
+            </div>
+
             <label for="name" class="text-base text-primary font-bold">
               Nama:
             </label>
-            <input type="text" id="name"
+            <input type="text" id="name" name="nama" required
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primar mt-2" />
           </div>
           <div class="w-full px-4 mb-8">
             <label for="Email" class="text-base text-primary font-bold">
               Email:
             </label>
-            <input type="email" id="Email"
+            <input type="email" id="Email" name="email" required
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary mt-2" />
           </div>
           <div class="w-full px-4 mb-8">
             <label for="message" class="text-base text-primary font-bold">
               Pesan:
             </label>
-            <textarea type="text" id="message"
+            <textarea type="text" id="message" name="pesan" required
               class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary mt-2 h-32"></textarea>
           </div>
-          <div class="w-full px-4">
+          <div class="px-4">
             <button
-              class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full w-full hover:shadow-lg hover:opacity-80 transition duration-500 ease-in-out">
+              class="btn-kirim text-base font-semibold text-white bg-primary py-2 px-6 rounded-lg hover:shadow-lg hover:opacity-80 transition duration-500 ease-in-out">
               Kirim
             </button>
+
+            <button type="button"
+              class=" btn-loading hidden flex items-center rounded-lg bg-primary py-2 px-6 text-white" disabled>
+              <svg class="mr-3 h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                </path>
+              </svg>
+              <span class="font-medium"> Processing... </span>
+            </button>
+
           </div>
         </div>
       </form>
+
+
     </div>
   </section>
   <!-- Contact Section End -->
@@ -626,20 +752,24 @@
           </h3>
           <ul class="text-slate-300">
             <li style="margin-bottom: 0.75rem">
-              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Keyboard & Lego</a>
+              <a href="#angkasaconnect" class="inline-block text-base hover:text-primary">AngkasaConnect</a>
             </li>
             <li style="margin-bottom: 0.75rem">
-              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Keyboard & Lego</a>
+              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Website Portofolio</a>
             </li>
             <li style="margin-bottom: 0.75rem">
-              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Keyboard & Lego</a>
+              <a href="#dsport" class="inline-block text-base hover:text-primary">Design portofolio</a>
             </li>
             <li style="margin-bottom: 0.75rem">
-              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Keyboard & Lego</a>
+              <a href="#cloningweb" class="inline-block text-base hover:text-primary">Cloning website</a>
             </li>
             <li style="margin-bottom: 0.75rem">
-              <a href="#Portofolio" class="inline-block text-base hover:text-primary">Keyboard & Lego</a>
+              <a href="#cloning" class="inline-block text-base hover:text-primary">Cloning design</a>
             </li>
+            <li style="margin-bottom: 0.75rem">
+              <a href="#kalkulator" class="inline-block text-base hover:text-primary">Kalkulator</a>
+            </li>
+
 
           </ul>
         </div>
@@ -689,17 +819,8 @@
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
           </a>
-          <!-- Discord -->
-          <a href="https://Instagram.com/athallah_019" target="_blank" rel="noopener noreferrer"
-            class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary text-white hover:bg-primary hover:text-white">
-            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Discord</title>
-              <path
-                d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-            </svg>
-          </a>
           <!-- LinkedIn -->
-          <a href="https://Instagram.com/athallah_019" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/athallah-abhi-1b37b1316/" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary text-white hover:bg-primary hover:text-white">
             <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <title>LinkedIn</title>
@@ -732,6 +853,44 @@
   <!-- Back To Top End -->
 
   <script src="src/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <script>
+    var alert_del = document.querySelectorAll('.alert-del');
+    alert_del.forEach((x) =>
+      x.addEventListener('click', function () {
+        x.parentElement.classList.add('hidden');
+      })
+    );
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbylF7Efvi58Mv9HBJ_snMVfdJrxX9y-4JYbIgCBxenU1kyMNQzqB9aX3f9lYlR1kymJyg/exec'
+    const form = document.forms['contact-form']
+
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const notif = document.querySelector('.notif');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // ketika tombol submit diklik
+      // tampilkan tombol loading, hilangkan tombol kirim
+      btnLoading.classList.toggle('hidden');
+      btnKirim.classList.toggle('hidden');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // tampilkan tombol kirim, hilangkan tombol loading
+          btnLoading.classList.toggle('hidden');
+          btnKirim.classList.toggle('hidden');
+          // tampilkan alert
+          notif.classList.toggle('hidden');
+          // reset formnya
+          form.reset();
+          console.log('Success!', response);
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
